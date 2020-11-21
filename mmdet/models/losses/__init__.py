@@ -12,6 +12,7 @@ from .iou_loss import (BoundedIoULoss, CIoULoss, DIoULoss, GIoULoss, IoULoss,
 from .mse_loss import MSELoss, mse_loss
 from .pisa_loss import carl_loss, isr_p
 from .smooth_l1_loss import L1Loss, SmoothL1Loss, l1_loss, smooth_l1_loss
+from .gaussian_smooth_l1_loss import GaussianL1Loss, GaussianSmoothL1Loss, gaussian_l1_loss, gaussian_smooth_l1_loss
 from .utils import reduce_loss, weight_reduce_loss, weighted_loss
 from .varifocal_loss import VarifocalLoss
 
@@ -24,5 +25,6 @@ __all__ = [
     'GHMR', 'reduce_loss', 'weight_reduce_loss', 'weighted_loss', 'L1Loss',
     'l1_loss', 'isr_p', 'carl_loss', 'AssociativeEmbeddingLoss',
     'GaussianFocalLoss', 'QualityFocalLoss', 'DistributionFocalLoss',
-    'VarifocalLoss'
+    'VarifocalLoss','gaussian_smooth_l1_loss', 'GaussianSmoothL1Loss','GaussianL1Loss',
+    'gaussian_l1_loss'
 ]
